@@ -1,0 +1,27 @@
+<div class="container">
+  <h1>Customer List</h1>
+  <div class="row">
+    <div class="col-md-12">
+      <a [routerLink]="['/customer-create']" class="btn btn-success">
+        ALTA USUARIO
+      </a>
+    </div>
+  </div>
+  <br />
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let cust of customers">
+        <td>{{ cust.name }}</td>
+        <td>{{ cust.address }}</td>
+        <td><a href="/#/customer-details/{{cust.id}}">Show Detail</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
