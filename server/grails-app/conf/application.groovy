@@ -18,7 +18,7 @@ grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 		[pattern: '/**/favicon.ico', access: ['permitAll']],
 		[pattern: '/api/login',      access: ['permitAll']],
 		[pattern: '/api/logout',     access: ['isFullyAuthenticated()']],
-		[pattern: '/customer',       access: ['isFullyAuthenticated()']],
+		[pattern: '/api/customer',       access: ['isFullyAuthenticated()']],
 		[pattern: '/**',             access: ['isFullyAuthenticated()']]
 ]
 
