@@ -31,7 +31,6 @@ grails.plugin.springsecurity.filterChain.chainMap = [
 		[pattern: '/**/favicon.ico', filters: 'none'],
 		[pattern: '/api/**', 		 filters:'JOINED_FILTERS,-anonymousAuthenticationFilter,-exceptionTranslationFilter,-authenticationProcessingFilter,-securityContextPersistenceFilter'],
 		[pattern: '/**', 			 filters:'JOINED_FILTERS,-restTokenValidationFilter,-restExceptionTranslationFilter'],
-		// [pattern: '/**',             filters: 'JOINED_FILTERS']
 ]
 
 
@@ -39,7 +38,7 @@ grails.plugin.springsecurity.rest.logout.endpointUrl = '/api/logout'
 grails.plugin.springsecurity.rest.token.validation.useBearerToken = false
 grails.plugin.springsecurity.rest.token.validation.headerName = 'X-Auth-Token'
 grails.plugin.springsecurity.rest.token.storage.memcached.hosts = 'localhost:11211'
-grails.plugin.springsecurity.rest.token.storage.memcached.username = 'admin'
-grails.plugin.springsecurity.rest.token.storage.memcached.password = 'admin'
+grails.plugin.springsecurity.rest.token.storage.memcached.username = ''
+grails.plugin.springsecurity.rest.token.storage.memcached.password = ''
 grails.plugin.springsecurity.rest.token.storage.memcached.expiration = 86400
 
